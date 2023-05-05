@@ -11,6 +11,7 @@ import 'package:intravel/model/restaurant_model.dart';
 import 'package:intravel/theme/app_colors.dart';
 import 'package:intravel/view/favorite_page.dart';
 import 'package:intravel/view/profile_screen.dart';
+import 'package:intravel/view/weather_page.dart';
 
 import '../model/excursions_model.dart';
 import '../model/hotel_model.dart';
@@ -914,7 +915,7 @@ class _HomeScreenState extends State<HomeScreen> {
       case 1:
         return const SizedBox();
       case 2:
-        return const SizedBox();
+        return WeatherPage();
       case 3:
         return const SizedBox();
       case 4:
@@ -962,7 +963,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 BottomNavigationBarItem(
                     icon: Icon(Icons.location_on), label: 'Map'),
                 BottomNavigationBarItem(
-                    icon: Icon(Icons.chat_bubble), label: 'Chat'),
+                    icon: Icon(Icons.sunny_snowing), label: 'Weather'),
                 BottomNavigationBarItem(
                     icon: Icon(Icons.calendar_today_rounded), label: 'Plans'),
                 BottomNavigationBarItem(
